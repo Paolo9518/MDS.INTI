@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minedu.MiCertificado.Api", "Minedu.MiCertificado.Api\Minedu.MiCertificado.Api.csproj", "{BC7054A8-0B3A-47D2-95D1-7987053D1031}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minedu.MiCertificado.Api.Application", "Minedu.MiCertificado.Api.Application\Minedu.MiCertificado.Api.Application.csproj", "{EFE2B4B6-51A2-4D93-9844-874DDF7210E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minedu.MiCertificado.Api.BusinessLogic", "Minedu.MiCertificado.Api.BusinessLogic\Minedu.MiCertificado.Api.BusinessLogic.csproj", "{ABBBE366-ACA6-47CB-A79C-02D33751B8B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minedu.MiCertificado.Api.DataAccess", "Minedu.MiCertificado.Api.DataAccess\Minedu.MiCertificado.Api.DataAccess.csproj", "{854E8313-9B30-4F1E-BF35-A7BB9B9ADDDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application", "2. Application", "{ABE68D2A-E3F5-403C-A5D0-E820252C3604}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1. BusinessLogic", "2.1. BusinessLogic", "{3F864CB9-6390-48AD-B334-A83BE947FEB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. DataAccess", "3. DataAccess", "{46BA2CC9-2AE0-437E-99BC-02BA87C2EC3F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minedu.MiCertificado.Api.Application.Contracts", "Minedu.MiCertificado.Api.Application.Contracts\Minedu.MiCertificado.Api.Application.Contracts.csproj", "{3B71CD68-4968-4181-BD2D-EB72AE1E5EA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minedu.MiCertificado.Api.DataAccess.Contracts", "Minedu.MiCertificado.Api.DataAccess.Contracts\Minedu.MiCertificado.Api.DataAccess.Contracts.csproj", "{4F7D0536-C770-4D44-8E67-8AA4312E1B20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{556A488F-9F0B-43FF-B4E7-FCEBED2B88A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minedu.MiCertificado.Api.CrossCutting", "Minedu.MiCertificado.Api.CrossCutting\Minedu.MiCertificado.Api.CrossCutting.csproj", "{496B2F97-D8A3-427C-AE42-9411335A0C2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Api", "1. Api", "{EB2D5FA6-397D-4489-B612-6003FDDD7577}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC7054A8-0B3A-47D2-95D1-7987053D1031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC7054A8-0B3A-47D2-95D1-7987053D1031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC7054A8-0B3A-47D2-95D1-7987053D1031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC7054A8-0B3A-47D2-95D1-7987053D1031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFE2B4B6-51A2-4D93-9844-874DDF7210E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE2B4B6-51A2-4D93-9844-874DDF7210E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE2B4B6-51A2-4D93-9844-874DDF7210E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE2B4B6-51A2-4D93-9844-874DDF7210E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABBBE366-ACA6-47CB-A79C-02D33751B8B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABBBE366-ACA6-47CB-A79C-02D33751B8B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABBBE366-ACA6-47CB-A79C-02D33751B8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABBBE366-ACA6-47CB-A79C-02D33751B8B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854E8313-9B30-4F1E-BF35-A7BB9B9ADDDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854E8313-9B30-4F1E-BF35-A7BB9B9ADDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854E8313-9B30-4F1E-BF35-A7BB9B9ADDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854E8313-9B30-4F1E-BF35-A7BB9B9ADDDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B71CD68-4968-4181-BD2D-EB72AE1E5EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B71CD68-4968-4181-BD2D-EB72AE1E5EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B71CD68-4968-4181-BD2D-EB72AE1E5EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B71CD68-4968-4181-BD2D-EB72AE1E5EA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F7D0536-C770-4D44-8E67-8AA4312E1B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7D0536-C770-4D44-8E67-8AA4312E1B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7D0536-C770-4D44-8E67-8AA4312E1B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7D0536-C770-4D44-8E67-8AA4312E1B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{496B2F97-D8A3-427C-AE42-9411335A0C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496B2F97-D8A3-427C-AE42-9411335A0C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496B2F97-D8A3-427C-AE42-9411335A0C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496B2F97-D8A3-427C-AE42-9411335A0C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC7054A8-0B3A-47D2-95D1-7987053D1031} = {EB2D5FA6-397D-4489-B612-6003FDDD7577}
+		{EFE2B4B6-51A2-4D93-9844-874DDF7210E5} = {ABE68D2A-E3F5-403C-A5D0-E820252C3604}
+		{ABBBE366-ACA6-47CB-A79C-02D33751B8B8} = {3F864CB9-6390-48AD-B334-A83BE947FEB1}
+		{854E8313-9B30-4F1E-BF35-A7BB9B9ADDDC} = {46BA2CC9-2AE0-437E-99BC-02BA87C2EC3F}
+		{3B71CD68-4968-4181-BD2D-EB72AE1E5EA0} = {ABE68D2A-E3F5-403C-A5D0-E820252C3604}
+		{4F7D0536-C770-4D44-8E67-8AA4312E1B20} = {46BA2CC9-2AE0-437E-99BC-02BA87C2EC3F}
+		{496B2F97-D8A3-427C-AE42-9411335A0C2E} = {556A488F-9F0B-43FF-B4E7-FCEBED2B88A0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C675531-AC62-49F8-8647-C8BD472460F2}
+	EndGlobalSection
+EndGlobal

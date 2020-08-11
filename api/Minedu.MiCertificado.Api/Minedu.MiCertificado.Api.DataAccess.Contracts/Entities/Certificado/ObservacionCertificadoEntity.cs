@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Minedu.MiCertificado.Api.DataAccess.Contracts.Entities.Certificado
+{
+    public class ObservacionCertificadoEntity
+    {
+        public int ID_CERTIFICADO_OBSERVACION { get; set; }
+        public int ID_SOLICITUD { get; set; }
+        public string ID_NIVEL { get; set; }
+        public int ID_ANIO { get; set; }
+        public string RESOLUCION { get; set; }
+        public int TIPO_SOLICITUD { get; set; }
+        public string MOTIVO { get; set; }
+        public int ID_TIPO { get; set; }
+        public string DSC { get; set; }
+        public int TIPO_OBS { get; set; }
+
+        public bool ACTIVO { get; set; }
+        public string ESTADO { get; set; }
+        public DateTime FECHA_CREACION { get; set; }
+        public DateTime FECHA_ACTUALIZACION { get; set; }
+        public string USUARIO { get; set; }
+    }
+}

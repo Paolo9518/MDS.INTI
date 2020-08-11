@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Minedu.MiCertificado.Api.CrossCutting\Minedu.MiCertificado.Api.CrossCutting.csproj" />
+    <ProjectReference Include="..\Minedu.MiCertificado.Api.DataAccess.Contracts\Minedu.MiCertificado.Api.DataAccess.Contracts.csproj" />
+    <ProjectReference Include="..\Minedu.MiCertificado.Api.DataAccess\Minedu.MiCertificado.Api.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MED.Comun.Seguridad.API">
+      <HintPath>..\Minedu.Libs\MED.Comun.Seguridad.API.dll</HintPath>
+    </Reference>
+    <Reference Include="MED.Security.API">
+      <HintPath>..\Minedu.Libs\MED.Security.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Minedu.Comun.Data">
+      <HintPath>..\Minedu.Libs\Minedu.Comun.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Minedu.Comun.Helper">
+      <HintPath>..\Minedu.Libs\Minedu.Comun.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Minedu.Comun.IData">
+      <HintPath>..\Minedu.Libs\Minedu.Comun.IData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Public\Images\escudo_minedu.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Public\Images\logo_minedu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>
