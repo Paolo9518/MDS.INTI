@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application", "2. Application", "{ABE68D2A-E3F5-403C-A5D0-E820252C3604}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. DataAccess", "3. DataAccess", "{46BA2CC9-2AE0-437E-99BC-02BA87C2EC3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. CrossCutting", "4. CrossCutting", "{556A488F-9F0B-43FF-B4E7-FCEBED2B88A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Api", "1. Api", "{EB2D5FA6-397D-4489-B612-6003FDDD7577}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDS.Inventario.Api.CrossCutting", "MDS.Inventario.Api.CrossCutting\MDS.Inventario.Api.CrossCutting.csproj", "{834C0BEB-5FAC-4B7F-8CB3-DE6ABD3B5DA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDS.Inventario.Api.DataAccess", "MDS.Inventario.Api.DataAccess\MDS.Inventario.Api.DataAccess.csproj", "{F2BBDC2E-1CB4-4499-8242-B26FC2E3D5B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDS.Inventario.Api.DataAccess.Contracts", "MDS.Inventario.Api.DataAccess.Contracts\MDS.Inventario.Api.DataAccess.Contracts.csproj", "{7BBABA1F-77E1-443B-AFDA-8BB92D0CB39D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDS.Inventario.Api.Application.Entities", "MDS.Inventario.Api.Application.Entities\MDS.Inventario.Api.Application.Entities.csproj", "{F75EB306-DC76-498C-A95B-84ABF1B59BF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDS.Inventario.Api.Application.Contracts", "MDS.Inventario.Api.Application.Contracts\MDS.Inventario.Api.Application.Contracts.csproj", "{98303C8B-7FC0-49A4-B38F-DDD6F9FD5C2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDS.Inventario.Api.Application", "MDS.Inventario.Api.Application\MDS.Inventario.Api.Application.csproj", "{AD171851-2FC3-4F53-B797-F34451CB6965}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MDS.Inventario.Api", "MDS.Inventario.Api\MDS.Inventario.Api.csproj", "{CB8839BE-05FB-49B4-B3A1-681467106431}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{834C0BEB-5FAC-4B7F-8CB3-DE6ABD3B5DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{834C0BEB-5FAC-4B7F-8CB3-DE6ABD3B5DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{834C0BEB-5FAC-4B7F-8CB3-DE6ABD3B5DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{834C0BEB-5FAC-4B7F-8CB3-DE6ABD3B5DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BBDC2E-1CB4-4499-8242-B26FC2E3D5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BBDC2E-1CB4-4499-8242-B26FC2E3D5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BBDC2E-1CB4-4499-8242-B26FC2E3D5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BBDC2E-1CB4-4499-8242-B26FC2E3D5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BBABA1F-77E1-443B-AFDA-8BB92D0CB39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBABA1F-77E1-443B-AFDA-8BB92D0CB39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBABA1F-77E1-443B-AFDA-8BB92D0CB39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBABA1F-77E1-443B-AFDA-8BB92D0CB39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75EB306-DC76-498C-A95B-84ABF1B59BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75EB306-DC76-498C-A95B-84ABF1B59BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75EB306-DC76-498C-A95B-84ABF1B59BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75EB306-DC76-498C-A95B-84ABF1B59BF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98303C8B-7FC0-49A4-B38F-DDD6F9FD5C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98303C8B-7FC0-49A4-B38F-DDD6F9FD5C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98303C8B-7FC0-49A4-B38F-DDD6F9FD5C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98303C8B-7FC0-49A4-B38F-DDD6F9FD5C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD171851-2FC3-4F53-B797-F34451CB6965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD171851-2FC3-4F53-B797-F34451CB6965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD171851-2FC3-4F53-B797-F34451CB6965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD171851-2FC3-4F53-B797-F34451CB6965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB8839BE-05FB-49B4-B3A1-681467106431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB8839BE-05FB-49B4-B3A1-681467106431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB8839BE-05FB-49B4-B3A1-681467106431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB8839BE-05FB-49B4-B3A1-681467106431}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{834C0BEB-5FAC-4B7F-8CB3-DE6ABD3B5DA1} = {556A488F-9F0B-43FF-B4E7-FCEBED2B88A0}
+		{F2BBDC2E-1CB4-4499-8242-B26FC2E3D5B1} = {46BA2CC9-2AE0-437E-99BC-02BA87C2EC3F}
+		{7BBABA1F-77E1-443B-AFDA-8BB92D0CB39D} = {46BA2CC9-2AE0-437E-99BC-02BA87C2EC3F}
+		{F75EB306-DC76-498C-A95B-84ABF1B59BF3} = {ABE68D2A-E3F5-403C-A5D0-E820252C3604}
+		{98303C8B-7FC0-49A4-B38F-DDD6F9FD5C2C} = {ABE68D2A-E3F5-403C-A5D0-E820252C3604}
+		{AD171851-2FC3-4F53-B797-F34451CB6965} = {ABE68D2A-E3F5-403C-A5D0-E820252C3604}
+		{CB8839BE-05FB-49B4-B3A1-681467106431} = {EB2D5FA6-397D-4489-B612-6003FDDD7577}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C675531-AC62-49F8-8647-C8BD472460F2}
+	EndGlobalSection
+EndGlobal
