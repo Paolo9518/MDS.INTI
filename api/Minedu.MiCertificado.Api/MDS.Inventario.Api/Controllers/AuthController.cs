@@ -32,54 +32,6 @@ namespace MDS.Inventario.Api.Controllers
             return Ok(response);
         }
 
-        //OK-S
-        // POST: api/auth/rol/centralizado
-        [HttpPost("rol/centralizado", Name = "PostRolCentralizado")]
-        [Produces("application/json", Type = typeof(StatusResponse))]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<IActionResult> PostRolCentralizado([FromBody] Models.Certificado.RolCentralizadoRequest encryptedRequest)
-        {
-            var response = await _authService.ObtenerRolCentralizado(encryptedRequest);
-
-            return Ok(response);
-        }
-
-        //OK
-        // POST: api/auth/rol/descentralizado
-        [HttpPost("rol/descentralizado", Name = "PostRolesDescentralizados")]
-        [Produces("application/json", Type = typeof(StatusResponse))]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<IActionResult> PostRolesDescentralizados([FromBody] Models.Certificado.RolDescentralizadoRequest encryptedRequest)
-        {
-            var response = await _authService.ObtenerRolesDescentralizados(encryptedRequest);
-
-            return Ok(response);
-        }
-
-        //OK-C
-        // POST: api/auth/rol/usuario
-        /*[HttpPost("rol/usuario", Name = "PostRolPorModular")]
-        [Produces("application/json", Type = typeof(StatusResponse))]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<IActionResult> PostRolPorModular([FromBody] Models.Certificado.UsuarioModularRequest encryptedRequest)
-        {
-            var response = await _authService.ObtenerRolPorModular(encryptedRequest);
-
-            return Ok(response);
-        }*/
-
-        //OK-C
-        // POST: api/auth/menu/nivel
-        [HttpPost("menu/nivel", Name = "PostMenuNivelPorRol")]
-        [Produces("application/json", Type = typeof(StatusResponse))]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<IActionResult> PostMenuNivelPorRol([FromBody] Models.Certificado.RolRequest model)
-        {
-            var response = await _authService.ObtenerMenuNivelPorRol(model);
-
-            return Ok(response);
-        }
-
         //OK
         [HttpPost]
         [Route("token")]
