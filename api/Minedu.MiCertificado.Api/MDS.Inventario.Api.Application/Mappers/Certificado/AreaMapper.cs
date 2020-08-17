@@ -7,9 +7,9 @@ namespace MDS.Inventario.Api.Application.Mappers.Certificado
 {
     public static class AreaMapper
     {
-        public static AreaCertificadoEntity Map(AreaModel dto)
+        public static PersonalEntity Map(AreaModel dto)
         {
-            return new AreaCertificadoEntity()
+            return new PersonalEntity()
             {
                 ID_AREA = dto.idArea,
                 DSC_AREA = dto.descripcionArea,
@@ -21,7 +21,7 @@ namespace MDS.Inventario.Api.Application.Mappers.Certificado
             };
         }
  
-        public static AreaModel Map(AreaCertificadoEntity entity)
+        public static AreaModel Map(PersonalEntity entity)
         {
             return new AreaModel()
             {

@@ -6,66 +6,22 @@ using System.Collections.Generic;
 using System.Data;
 using System.Text;
 using System.Threading.Tasks;
+using MDS.Inventario.Api.Application.Entities.Models;
 
 namespace MDS.Inventario.Api.DataAccess.UnitOfWork
 {
     public partial class UnitOfWork : BaseUnitOfWork, IUnitOfWork
     {
-        /*public async Task<IEnumerable<IEEntity>> GetIE(IEEntity entity)
+        public async Task<IEnumerable<PersonalEntity>> ValidarUsuario(string usuario, string contrasenia)
         {
             var parm = new Parameter[] {
-                new Parameter("@NUMERO_DOCUMENTO" , entity.NUMERO_DOCUMENTO),
-                new Parameter("@TIPO_DOCUMENTO" , entity.TIPO_DOCUMENTO)
+                new Parameter("@USUARIO" , usuario),
+                new Parameter("@CONTRASENIA" , contrasenia)
             };
 
             try
             {
-                var result = this.ExecuteReader<IEEntity>(
-                    "dbo.USP_INTERNO_CERTIFICADO_LISTAR_IE_ASOCIADAS_DIRECTOR"
-                    , CommandType.StoredProcedure
-                    , ref parm
-                );
-
-                return result;
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }*/
-
-        /*public async Task<IEnumerable<IEEntity>> ObtenerRolActivo(IEEntity entity)
-        {
-            var parm = new Parameter[] {
-                new Parameter("@NUMERO_DOCUMENTO" , entity.NUMERO_DOCUMENTO),
-                new Parameter("@TIPO_DOCUMENTO" , entity.TIPO_DOCUMENTO)
-            };
-
-            try
-            {
-                var result = this.ExecuteReader<IEEntity>(
-                    "dbo.USP_INTERNO_CERTIFICADO_LISTAR_IE_ASOCIADAS_DIRECTOR"
-                    , CommandType.StoredProcedure
-                    , ref parm
-                );
-
-                return result;
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
-        }*/
-
-        public async Task<IEnumerable<MenuNivelRolEntity>> ObtenerMenuNivelPorRol(string ID_ROL)
-        {
-            var parm = new Parameter[] {
-                new Parameter("@ID_ROL" , ID_ROL)
-            };
-
-            try
-            {
-                var result = this.ExecuteReader<MenuNivelRolEntity>(
+                var result = this.ExecuteReader<PersonalEntity>(
                     "dbo.USP_INTERNO_CERTIFICADO_LISTAR_MENU_NIVEL_X_ROL"
                     , CommandType.StoredProcedure
                     , ref parm
