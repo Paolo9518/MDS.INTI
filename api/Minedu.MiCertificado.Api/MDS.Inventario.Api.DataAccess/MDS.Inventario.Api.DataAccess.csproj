@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MDS.Inventario.Api.Application.Entities\MDS.Inventario.Api.Application.Entities.csproj" />
     <ProjectReference Include="..\MDS.Inventario.Api.DataAccess.Contracts\MDS.Inventario.Api.DataAccess.Contracts.csproj" />
   </ItemGroup>
 
