@@ -124,6 +124,18 @@ export default {
       ],
     },
     {
+      name: 'Personal',
+      url: '/personal',
+      icon: 'icon-puzzle',
+      children: [
+        {
+          name: 'Personal',
+          url: '/personal/Registro',
+          icon: 'icon-puzzle',
+        }
+      ],
+    },
+    {
       name: 'Buttons',
       url: '/buttons',
       icon: 'icon-cursor',
