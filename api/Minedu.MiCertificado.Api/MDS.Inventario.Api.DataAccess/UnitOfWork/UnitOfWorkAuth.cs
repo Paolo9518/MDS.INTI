@@ -22,7 +22,7 @@ namespace MDS.Inventario.Api.DataAccess.UnitOfWork
             try
             {
                 var result = this.ExecuteReader<PersonalEntity>(
-                    "dbo.USP_INTERNO_CERTIFICADO_LISTAR_MENU_NIVEL_X_ROL"
+                    "dbo.USP_MDS_INVENTARIO_USUARIO_VALIDO"
                     , CommandType.StoredProcedure
                     , ref parm
                 );
