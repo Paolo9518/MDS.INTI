@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Button, Card, CardBody, CardGroup, Col, Container,Form, FormFeedback, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
+import { Button, Card, CardBody, CardGroup, Col, Container, Form, FormFeedback, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 import './ValidationForms.css';
 import useForm from "./../../../hooks/useForm";
 import { AuthContext } from "./../../../context/index";
@@ -42,25 +42,28 @@ const Login = (props) => {
   }, [errors]);
 
   const submitForm = async () => {
+    debugger;
     const token = await login(values);
-
-    if (!token) {
+    debugger;
+    if (!token.data.data.token) {
       setMsg('');
       setShow(false);
-      
+
     } else {
       values.email = "";
       values.password = "";
-      setMsg(token.messages);
+      setMsg(token.data.messages[0]);
       setShow(true);
     }
   }
 
   useEffect(() => {
-    if (token.success) {
-      props.history.push('/admin')
-    }
-  }, [token.success])
+    debugger;
+    if (token !== "")
+      if (token.data.success) {
+        props.history.push('/admin')
+      }
+  }, [token])
 
   const goForm = event => {
     event.preventDefault();
