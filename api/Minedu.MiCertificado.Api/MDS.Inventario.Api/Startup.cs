@@ -101,13 +101,14 @@ namespace MDS.Inventario.Api
                 //.Value;
                 .Get<List<string>>();
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy("CorsPolicy",
-                    builder => builder.WithOrigins(valuesSection.ToArray())
-                    .AllowAnyHeader()
-                    .AllowAnyMethod());
-            });
+            Action<Microsoft.AspNetCore.Cors.Infrastructure.CorsOptions> setupAction = options =>
+                           {
+                               options.AddPolicy("CorsPolicy",
+                                   builder => builder.WithOrigins(valuesSection.ToArray())
+                                   .AllowAnyHeader()
+                                   .AllowAnyMethod());
+                           };
+            services.AddCors(setupAction);
 
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
