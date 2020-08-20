@@ -13,7 +13,7 @@ export function getJwt() {
 }
 
 export const _authServiceLogin = async (request) => {
-    const response = await http.post(endpoint + 'login', request);
+    const response = await http.post(endpoint + 'auth', request);
     return response;
 }
 

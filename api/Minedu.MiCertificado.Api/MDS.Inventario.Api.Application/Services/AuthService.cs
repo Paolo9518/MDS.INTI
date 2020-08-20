@@ -4,7 +4,7 @@ using MDS.Inventario.Api.Application.Contracts.Services;
 using Mappers = MDS.Inventario.Api.Application.Mappers;
 using MDS.Inventario.Api.DataAccess.Contracts.UnitOfWork;
 using Models = MDS.Inventario.Api.Application.Entities.Models;
-using SeguridadWSService;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,9 +43,11 @@ namespace MDS.Inventario.Api.Application.Services
             _httpContextAccessor = httpContextAccessor;
         }
 
-        public async Task<StatusResponse> Login(Models.UsuarioExtends request)
+        public async Task<StatusResponse> Login(Models.Helpers.ParametroHelper objetoEncriptado)
         {
             var response = new StatusResponse();
+            var desencriptarObjeto = ReactEncryptationSecurity.Decrypt<string>(objetoEncriptado.parametros, "");
+            var request = JsonConvert.DeserializeObject<Models.UsuarioExtends>(desencriptarObjeto);
             try
             {
                 // 1. Validar el usuario

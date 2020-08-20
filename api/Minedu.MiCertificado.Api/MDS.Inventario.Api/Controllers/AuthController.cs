@@ -25,41 +25,12 @@ namespace MDS.Inventario.Api.Controllers
         // POST: api/auth/auth
         [HttpPost("auth", Name = "GetLogin")]
         [Produces("application/json", Type = typeof(StatusResponse))]
-        public async Task<IActionResult> GetLogin([FromBody] Models.Certificado.AuthModel encryptedRequest)
+        public async Task<IActionResult> GetLogin([FromBody] Models.Helpers.ParametroHelper encryptedRequest)
         {
-            var response = await _authService.ObtenerUsuario(encryptedRequest);
+            var response = await _authService.Login(encryptedRequest);
 
             return Ok(response);
         }
-
-        //OK
-        [HttpPost]
-        [Route("token")]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [RequestLimitDDOS]
-        [TokenAutenticationAtribute(CreateToken = true)]
-        public async Task<IActionResult> GenerarToken()
-        {
-            return Ok(true);
-        }
-
-        [HttpPost]
-        [Route("login")]
-        public async Task<IActionResult> LoginSistema([FromBody] Models.Certificado.AuthUserModel modelo)
-        {
-            if (string.IsNullOrEmpty(modelo.token))
-            {
-                return BadRequest(new
-                {
-                    ErrorMessage = "Datos incompletos",
-                    CodeError = 501
-                });
-            }
-
-            var respuesta = await _authService.Login(modelo);
-
-            //ViewBag.Login = true;
-            return Ok(respuesta);
-        }
+        
     }
 }

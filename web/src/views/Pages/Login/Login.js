@@ -1,5 +1,4 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Button, Card, CardBody, CardGroup, Col, Container, FormFeedback, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 import { Formik, Form } from 'formik';
 import * as Yup from "yup";
@@ -46,16 +45,25 @@ const initialValues = {
 }
 
 const onSubmit = (values, { setSubmitting, setErrors }) => {
-  setTimeout(() => {
+  /*setTimeout(() => {
     
     alert(JSON.stringify(values, null, 2));
     setSubmitting(false)
-  }, 2000)
+  }, 2000)*/
+  debugger;
+  let request = {
+    NombreUsuario: '',
+    Contrasenia: ''
+  }
+  //let requestEncrypt = { parametros: hideData(JSON.stringify(request)) };
+  //const response = await _authServiceLogin(requestEncrypt);
+
+
 }
 
 /* Contrucción del Interfaz de Login */
 const Login = (props) => {
-
+debugger;
   const findFirstError = (formName, hasError) => {
     const form = document.forms[formName]
     for (let i = 0; i < form.length; i++) {

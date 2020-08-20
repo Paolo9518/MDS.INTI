@@ -7,6 +7,6 @@ namespace MDS.Inventario.Api.DataAccess.Contracts.UnitOfWork
 {
     public partial interface IUnitOfWork : IBaseUnitOfWork
     {
-        Task<IEnumerable<PersonalEntity>> ValidarUsuario(string usuario, string contrasenia)
+        Task<IEnumerable<PersonalEntity>> ValidarUsuario(string usuario, string contrasenia);
     }
 }
